@@ -68,12 +68,35 @@ function handleComplete(evt,comp) {
 </body>
 </html>
 
-<script>
-    var clickTag = "https://www.lenovo.com/sg/en/";
-
-    document.addEventListener("DOMContentLoaded", function () {
-        document.body.addEventListener("click", function () {
-            window.open(window.clickTag, "_blank");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDN Banner 728x90</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #banner {
+            width: 728px;
+            height: 90px;
+            background: url('https://tham-tran-1807.github.io/LNV_X90_IDP_Pro5_728x90_rp/') no-repeat center;
+            background-size: cover;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="banner"></div>
+    
+    <script>
+        var clickTag = "https://www.lenovo.com/sg/en/";
+        
+        document.getElementById("banner").addEventListener("click", function() {
+            window.open(clickTag, "_blank");
         });
-    });
-</script>
+    </script>
+</body>
+</html>
